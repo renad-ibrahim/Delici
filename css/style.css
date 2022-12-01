@@ -1,0 +1,255 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Nerko One', cursive;
+    font-family: 'Trispace', sans-serif;
+}
+h2{
+    font-size: 50px;
+}
+/*  - - - - - - - - - -- - - Navbar - - - - - -  - - - - - - - */
+.container-fluid{
+    padding: 20px 50px;
+}
+hr{
+    margin: 0px;
+}
+#navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #fff;
+}
+#navbar p{
+    margin-bottom: 0px;
+}
+@media  screen and (max-width:1200px) {
+    .left-side{
+        display: none;
+    }
+    .right-side{
+        width: 100%;
+        text-align: center;
+    }
+}
+/*  - - - - - - - - - -- - - Header - - - - - -  - - - - - - - */
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+header{
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/header/20181014.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.logo img{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+}
+.header-content{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.header-content p{
+    color: #e4c590;
+    margin-bottom: 0px;
+}
+.header-content h1{
+    font-size: 80px;
+}
+.cut{
+    width: 100px;
+    height: 50px;
+}
+.btn{
+    margin-top: 35px;
+    border: 1px #e4c590 solid;
+    padding: 20px 50px;
+    color: #e4c590;
+    transition: all 1s;
+}  
+.btn:hover{
+    background-color: #e4c590;
+    color: #fff;
+}
+@media  screen and (max-width:1200px){
+    .logo img{
+        top: 15%;
+    }
+    .header-content h1{
+        font-size: 50px;
+    }
+}
+/* - - - - -- - - - - - - Offers - - - - - - - - - --  - - */
+#offers{
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/offers/bg-1.png);
+    background-repeat: no-repeat;
+    background-color: #0e0d0c;
+    padding: 50px 0px;
+}
+.offers-content{
+    margin-bottom: 50px;
+}
+.offers-content p{
+    color: #e4c590;
+    margin-bottom: 0px;
+}
+#offers .row div p a{
+    color: #e4c590;
+    font-size: 12px;
+}
+.overlay-offers{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+@media screen and (max-width:992px) {
+    .offer{
+        margin-bottom: 25px;
+    }
+}
+/* - - - - -- - - - - - - Lobster - - - - - - - - - --  - - */
+.lobster-right{
+    background-color: #171819;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/lobster/bg-4.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.hint{
+    color: #e4c590;
+}
+.price {
+    font-size: 25px;
+    color: #e4c590;
+}
+/* - - - - -- - - - - - - Menu - - - - - - - - - --  - - */
+#menu{
+    background-color: #0e0d0c;
+    padding: 50px 0px;
+    background-image: url('../images/deliciousMenu/bg-6.png');
+}
+.menu-content{
+    color: #e4c590;
+}
+.options .active{
+    color: #e4c590;
+    border-bottom: 2px solid #e4c590;
+}
+.meal{
+    position: relative;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    width: 100%;
+    height: 6px;
+    color: #e4c590;
+}
+/*  -- - -  - - - - - - - - Best Specialist - - -  - - - - - - - */
+#specialist{
+    background-color: #0e0d0c;
+    padding: 80px 0px;
+    background-image: url('../images/image-3.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.single-box{
+    background-color: transparent;
+}
+.sec-heading p{
+    color: #e4c590;
+}
+/* - -  - - - - - - - Online Reservation - - - - - - - -- -- - */
+#reservation{
+    background-image: url('../images/reserve/bg.jpg');
+    background-size: cover;
+    background-position: 100% 100%;
+    padding: 50px 0px;
+    position: relative;
+}
+.reserves{
+    background-color: #0e0d0c;
+}
+.num{
+    color: #e4c590;
+}
+.right-reserve{
+    background-image: url('../images/reserve/pattern-2.png');
+    height: 100%;
+}
+/* - - - - -- -- - - - Our Strength - - -  - - - - -- -- */
+#strength{
+    background-color: #171819;
+    padding: 50px 0px;
+    background-image: url('../images/image-2.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.our{
+    background-color: #0e0d0c;
+    height: 285px;
+}
+@media screen and (max-width:992px) {
+    .our{
+        margin-bottom: 15px;
+    }
+}
+/* - - - - -- -- - - - Footer - - -  - - - - -- -- */
+#footer{
+    background-image: url('../images/footer/bg4.jpg');
+    padding: 50px 0px;
+    position: relative;
+}
+#footer .container{
+    position: relative;
+    z-index: 1;
+}
+.footer-center{
+    background-image: url('../images/footer/pattern-4.png');
+}
+.footer-center input{
+    border-radius: 15px;
+    border: 1px solid #e4c590;
+}
+.overlay-footer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 709.5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+#footer ul li a{
+    color: #fff;
+    transition: all 0.5s;
+}
+#footer ul li a:hover{
+    color: #e4c590;
+}
